@@ -14,9 +14,9 @@ def setupMotor(port, ratio, reversed):
     motor.set_stopping(BRAKE)
     return motor
 
-rightDriveMotor = setupMotor(Ports.PORT10, GearSetting.RATIO_18_1,True)
+rightDriveMotor = setupMotor(Ports.PORT19, GearSetting.RATIO_18_1,True)
 leftDriveMotor = setupMotor(Ports.PORT20, GearSetting.RATIO_18_1, False)
-band_motor = setupMotor(Ports.PORT1, GearSetting.RATIO_18_1, True)
+band_motor = setupMotor(Ports.PORT10, GearSetting.RATIO_18_1, True)
 
 rightDriveMotor.spin(FORWARD)
 leftDriveMotor.spin(FORWARD)
